@@ -253,11 +253,42 @@ $ git --version
 ## *INTRO-POO*
 
 #### ORIGEN JAVA
+![captura](img6.png)
 
-
+- JAVA fue desarrollado por James Gosling y su equipo en Sun Microsystems (1990)
+- Se inspiro en la necesidad de una plataforma de software que pudiera funcionar en diversos dispositivos y sistemas operativos
+- La plataforma JAVA fue lanzada oficialmente en 1995
 -------------------------------------------------------------------------
 #### Objec-oriented Programming: A Primer
 ![captura](img4.png)
+
+*1. Early Conceps-Simula*
+
+- En 1960 investigadores del Centro de Computacion de Noruega crearon el lenguaje de programacion *Simula*
+- Introdujo concepto de clases y objetos 
+- Diseñado para simulaciones y fue pionero en encapsulacion y herencia 
+
+*2. Smalltalk*
+
+- En 1970, desarrollado por Alan Kay y equipo Xerox PARC 
+- Enfatizo la simplicidad, la transmision de mensajes y el desarrollo interactivo
+
+*3. C++ Emergence*
+
+- Desarrollado en 1980, amplio C con caracteristicas orientadas a objetos
+- Introdujo clases, herencia, polimorfismo y encapsulacion, combinando enfoques procesales y de P.O.O 
+
+*4. OPP Mainstream Adoption*
+
+- En 1990, la POO gano popularidad con el surgimiento de Java y C# 
+- Java, diseñado por James Gosling, ofrecía independencia de plataforma y seguridad, haciendo que la programación orientada a objetos fuera más accesible.
+- C# de Microsoft, influenciado por Java y C++, se convirtió en un lenguaje central para el desarrollo de .NET.
+
+*5. OOP in Modern Times*
+
+- Sigue siendo un paradigma de programacion dominante 
+- Muchos lenguajes ampliamente utilizados como Python, JavaScript, Ruby y PHP admiten conceptos de programación orientada a objetos.
+
 -------------------------------------------------------------------------
 #### ¿COMO FUNCIONA JAVA?
 
@@ -333,3 +364,10 @@ public class Aninal {
 -------------------------------------------------------------------------
 
 ## CICLO FOR 
+
+
+-------------------------------------------------------------------------
+
+```Date: Martes 7 de mayo```
+
+# Quinta Clase
