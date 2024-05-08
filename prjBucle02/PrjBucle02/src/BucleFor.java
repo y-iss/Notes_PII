@@ -30,11 +30,22 @@ public class BucleFor {
             System.out.println("FOR:");
              for (int i = 1; i < 10; i++) {
                 for (int s = 1; s < i; s++)  
-                  System.out.print((i%2==0)?"-";"+");
+                  System.out.print((i%2==0)?"-":"+");
                   System.out.print(" ");
         }
         System.out.println("");
     }
+
+        //Crear escalera por niveles
+        public void escalera(){
+            int nivel = 10;
+            String escalon= "|_";
+            for (int i=1; i< nivel; i++){
+                for (int s = 1; s<i; s++ )
+                System.out.print("   ");
+                System.out.println(escalon);
+            }
+        }
 }
 
 
