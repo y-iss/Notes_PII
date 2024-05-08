@@ -5,6 +5,13 @@
       "type": "java",
       "name": "App",
       "request": "launch",
+      "mainClass": "prjBucle02.PrjBucle02.src.App",
+      "projectName": "Clase1_9c46790"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
       "mainClass": "App",
       "projectName": "Clase1_d0191f33"
     },

@@ -373,3 +373,31 @@ public class Aninal {
 # Quinta Clase
 
 ## CICLO BUCLE FOR 
+-------------------------------------------------------------------------
+
+```Date: Miercoles 8 de mayo```
+
+# Sexta Clase
+
+## EJERCICIOS BUCLE FOR 
+
+*Signos Alternos*
+
+- Metodo: +-+-+-+-+
+  
+![captura](img7.png)
+
+- Metodo Alterno: +--+++----+++++...n
+  
+![captura](img8.png)
+
+- Metodo Alterno Generativo: 
+  
+![captura](img9.png)
+
+- Metodo Alterno Generativo Mejora: 
+  
+![captura](img10.png)
+
+
+
