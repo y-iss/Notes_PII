@@ -292,20 +292,81 @@ $ git --version
 -------------------------------------------------------------------------
 #### ¿COMO FUNCIONA JAVA?
 
-(texto)
+- JAVA es un lenguaje de programacion de alto nivel y orientado a objetos, utilizado ampliamente en el desarrollo de software 
+
+#### *Pasos basicos:*
+
+1. **Escribir codigo fuente:** se utiliza un editor de texto o un entorno de desarrollo integrado (IDE)
+2. **Guardar el archivo:** el codigo fuente se guarda en un archivo con extension ".java"
+3. **Compilador:** se utiliza "javac", se hace desde la linea de comandos o desde el IDE
+4. **Generar archivo de bytecode:** se genera un archivo con extension ".class" que contiene el bytecode
+5. **Ejecutar el programa:** una vez generado el bytecode, se ejecuta el programa utilizando "java"
+6. **Resultado:** se muestra la informacion en la consola 
+
 ![captura](img5.png)
 -------------------------------------------------------------------------
-
 #### TIPOS DE LENGUAJE
 
--------------------------------------------------------------------------
+1. **Tipos primitivos:** Estos son los tipos de datos básicos que están integrados en el lenguaje y no son objetos. 
+   
+1.1. **byte:** Representa valores enteros de 8 bits con signo.
 
+1.2. **short:** Representa valores enteros de 16 bits con signo.
+
+1.3. **int:** Representa valores enteros de 32 bits con signo.
+
+1.4. **long:** Representa valores enteros de 64 bits con signo.
+
+1.5 **float:** Representa valores de punto flotante de 32 bits.
+
+1.6. **double:** Representa valores de punto flotante de 64 bits.
+
+1.7. **char:** Representa un solo carácter Unicode de 16 bits.
+
+1.8. **boolean:** Representa un valor booleano, que puede ser true o false.
+
+2. **Tipos de referencia:** Se refieren a objetos y no son primitivos
+
+2.1. **string:** representa una secuencia de caracteres
+
+2.2. **arrays:** arreglos que pueden contener elementos de un tipo especifico
+
+2.3. **clases y objetos:** definidos por el usuario, permiten crear estructuras complejas y aplicar la P.O.O
+
+3. **Enunmeraciones:** Tipos especiales que permiten definir un conjunto fijo de constantes con nombre
+
+4. **Tipos genericos:** Permiten escribir código que puede funcionar con diferentes tipos de datos de manera segura y flexible
+
+5. **Tipos de colecciones:** ariedad de colecciones como ArrayList, LinkedList, HashMap, HashSet, etc., que permiten almacenar y manipular conjuntos de elementos de manera eficiente
+
+6. **Tipos de datos especiales:** Estos tipos no son utilizados con tanta frecuencia pero son importantes en ciertos contextos, como:
+
+6.1. **void:** Indica que un método no devuelve ningún valor.
+
+6.2. **null:** Representa la ausencia de un valor, utilizado en referencia a objetos.
+  
+![captura](img13.png)
+-------------------------------------------------------------------------
 #### SABORES DE JAVA 
 
+1. **Java Standard Edition (Java SE)**: Es la versión principal de Java orientada a aplicaciones de escritorio y desarrollo general. Incluye las bibliotecas básicas y herramientas necesarias para desarrollar y ejecutar aplicaciones Java en cualquier sistema compatible.
+
+2. **Java Enterprise Edition (Java EE)**: Ahora conocida como Jakarta EE, es una edición de Java enfocada en el desarrollo de aplicaciones empresariales y servidores de aplicaciones. Proporciona un conjunto de APIs y herramientas para crear aplicaciones web, servicios web, aplicaciones empresariales distribuidas, entre otros.
+
+3. **Java Micro Edition (Java ME)**: Esta edición está diseñada para dispositivos móviles y embebidos con recursos limitados, como teléfonos móviles antiguos, PDAs y otros dispositivos similares. Ofrece un entorno de desarrollo ligero y optimizado para estos dispositivos.
+
+4. **Java Card**: Es una versión de Java diseñada específicamente para tarjetas inteligentes y dispositivos similares. Permite desarrollar aplicaciones seguras y portátiles que se ejecutan en estos dispositivos.
+
+5. **OpenJDK**: Es una implementación de código abierto de la plataforma Java SE. Incluye el Java Development Kit (JDK) y proporciona una alternativa libre para desarrolladores que prefieren usar software de código abierto.
+
+6. **Oracle JDK**: Es la implementación oficial de Oracle de la plataforma Java SE. Incluye herramientas y bibliotecas adicionales, como JavaFX, y ofrece soporte comercial y actualizaciones de seguridad.
+
+7. **AdoptOpenJDK**: Es otra implementación de código abierto de Java SE que ofrece binarios precompilados y actualizaciones regulares. Es respaldada por una comunidad de desarrolladores y es una opción popular para proyectos de código abierto y entornos de producción.
 -------------------------------------------------------------------------
 
 #### SINTAXIS DE JAVA 
 
+![captura](img14.png)
 -------------------------------------------------------------------------
 
 #### ESTRUTURAS vs O.O
@@ -400,4 +461,29 @@ public class Aninal {
 ![captura](img10.png)
 
 
+```Date: Lunes 13 de mayo```
+
+# Septima Clase
+
+## P.O.O 
+
+### PROTOTIPADO : DISEÑO FLUJO DE TRABAJO 
+
+##### Pasos Arquitectura en Sofwtware: 
+
+
+
+1. *Conceptualizacion : dibujar / prototipar* 
+
+**Propiedades:** Trata de describir a la persona 
+**Acciones:** Acciones en funcion de las propiedades  
+**Parametro:**  
+
+2. *UML :* Lenguaje de Modelado Mnificado 
+
+Se ocupan clases, el sujeto de estudio 
+
+3. *Codigo (JAVA) :* se codifica el UML 
+
+![captura](test.drawio.png)
 
