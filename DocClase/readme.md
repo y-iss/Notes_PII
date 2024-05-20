@@ -460,6 +460,7 @@ public class Aninal {
   
 ![captura](img10.png)
 
+-------------------------------------------------------------------------
 
 ```Date: Lunes 13 de mayo```
 
@@ -485,5 +486,26 @@ Se ocupan clases, el sujeto de estudio
 
 3. *Codigo (JAVA) :* se codifica el UML 
 
-![captura](test.drawio.png)
+![captura](img15.png)
+
+-------------------------------------------------------------------------
+
+```Date: Martes 14 de mayo```
+
+# Octava Clase
+
+-------------------------------------------------------------------------
+
+```Date: Miercoles 15 de mayo```
+
+# Novena Clase
+
+
+-------------------------------------------------------------------------
+
+```Date: Lunes 20 de mayo```
+
+# Decima Clase
+
+## *Ejercicio*
 
