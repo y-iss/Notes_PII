@@ -7,7 +7,13 @@ public class Cliente {
 
     public void setDinero(Float dinero) {
         this.dinero = dinero;
-    } 
+    }
 
+    public void seleccionarProducto() {
 
+    }
+
+    public Boolean pagarProducto(String ListaProducto) {
+
+    }
 }
