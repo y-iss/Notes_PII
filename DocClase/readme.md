@@ -507,5 +507,31 @@ Se ocupan clases, el sujeto de estudio
 
 # Decima Clase
 
+## HERENCIA
+
 ## *Ejercicio*
 
+-------------------------------------------------------------------------
+
+```Date: Martes 21 de mayo```
+
+# Onceava Clase
+
+ ```java
+public class Perro {
+   private String nombre;
+                    raza; 
+   public Perro (){
+    nombre = " ";
+    raza = " ";
+   }
+}
+```
+## CONSTRUCTOR 
+
+- inicializar
+- es un metodo
+- = nombre class
+- siempre es publico/protect
+- se llaman una sola vez de forma automatica (en la instancia)
+- 
