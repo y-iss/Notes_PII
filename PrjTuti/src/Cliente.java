@@ -10,10 +10,14 @@ public class Cliente {
     }
 
     public void seleccionarProducto() {
+    }
 
+    public String seleccionarProductoOnline() {
+        return " ";
     }
 
     public Boolean pagarProducto(String ListaProducto) {
-
+        return true;
     }
+
 }
