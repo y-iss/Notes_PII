@@ -1,60 +1,72 @@
-import java.lang.reflect.Constructor;
-
 public class Persona {
-    private String cedula;
+
     private String nombre;
     private String apellido;
+    private String cedula;
 
-    // Constructor de la clase persona
+    // Constructor de la clase persona para inicializar las variables
     public Persona() {
-        cedula = " ";
-        nombre = " ";
-        apellido = " ";
+        cedula = "";
+        nombre = "";
+        apellido = "";
     }
-
     public Persona(String cedula, String nombre, String apellido) {
-        setCedula(cedula); // this.cedula = cedula;
-        setNombre(nombre); // this.nombre = nombre;
-        setApellido(apellido); // this.apellido = apellido;
+        setCedula(cedula); // this.cedula=cedula;
+        setNombre(nombre); // this.nombre=nombre;
+        setApellido(apellido); // this.apellido=apellido;
+        ;
     }
+    public void setNombre(String nombre) {
 
-    public String getCedula() {
-        return cedula;
-    }
+        if (nombre != null) {
 
-    public void setCedula(String cedula) {
-        if (cedula.length() == 10)
-            this.cedula = cedula;
-        else
-            this.cedula = "no valido";
-    }
+            this.nombre = nombre.toUpperCase();
 
-    public String getNombre(){
+        } else {
 
-    public void setNombre(String nombre){
+            this.nombre = "";
 
-    public String getApellido(){
-
-    public void setApellido(String apellido) {
+        }
 
     }
-
-    }}
-
     public String getNombre() {
         return nombre;
     }
+    public void setApellido(String apellido) {
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre.toUpperCase();
+        if (apellido != null) {
+
+            this.apellido = apellido.toUpperCase();
+
+        } else {
+
+            this.apellido = "";
+
+        }
     }
-
     public String getApellido() {
         return apellido;
     }
+    public void setCedula(String cedula) {
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido.toUpperCase();
+        if (cedula == null || cedula.length() != 10) {
+            this.cedula = "No tiene la longitud";
+        } else {
+            this.cedula = cedula;
+        }
+
+        // if (cedula != null) {
+        //     if (10 == cedula.length()) {
+        //         this.cedula = cedula;
+        //     } else {
+        //         this.cedula = "No tiene la longitud requerida";
+        //     }
+        // } else {
+        //     this.cedula = "No tiene la longitud requerida";
+        // }
     }
-
+    public String getCedula() {
+        return cedula;
+    }
 }
+

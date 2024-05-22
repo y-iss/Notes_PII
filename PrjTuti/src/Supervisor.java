@@ -1,12 +1,13 @@
-public class Supervisor {
-    private String llaveAuo;
+public class Supervisor extends Cajero {
 
-    public String getLlaveAuo() {
-        return llaveAuo;
+    private String codigoAutorizacion;
+
+    public String getCodigoAutorizacion() {
+        return codigoAutorizacion;
     }
 
-    public void setLlaveAuo(String llaveAuo) {
-        this.llaveAuo = llaveAuo;
+    public void setCodigoAutorizacion(String codigoAutorizacion) {
+        this.codigoAutorizacion = codigoAutorizacion;
     }
 
 }

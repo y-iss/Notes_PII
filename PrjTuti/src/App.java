@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Persona oP = new Persona();
-        Persona oP2 = new Persona("1231238", "Juanca", "Leon");
+        Persona oP2 = new Persona(null, null, null);
         Supervisor oS = new Supervisor();
 
         oP.setCedula("1243");

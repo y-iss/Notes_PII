@@ -17,5 +17,4 @@ public class Cajero {
     public void setClave(String clave) {
         this.clave = clave;
     }
-
 }
