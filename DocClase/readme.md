@@ -158,7 +158,7 @@ Bloque de codigo de comentario
    ##### Lista ordenada:
    1. Primer elemento 
    2. Segundo elemento 
-   3. Tercer elemento
+   3. Tercer elemento 
   
 ---------------------------------------------------------------
 * Enlaces: 
@@ -509,13 +509,56 @@ Se ocupan clases, el sujeto de estudio
 
 ## HERENCIA
 
+- Implica que una superclase o clase base herda sus funciones y atributos a una subclase o clase derivada. 
+- Palabra reservada que permite realizar herencia entre clases es *extends*
+
+## Tipos de herencia 
+
+### 1. *Herencia simple o unica*
+
+Una clase hija hereda de una clase padre 
+
+![captura](img16.png)
+
+### 2. *Herencia multiple*
+
+Una clase hija hereda de dos o mas clases padre 
+
+![captura](img17.png)
+
+### 3. *Herencia multinivel*
+
+Una clase hija hereda de una clase padre, que a su vez es clase hija de otra clase padre 
+
+![captura](img18.png)
+
+### 4. *Herencia jerarquica*
+
+Una clase padre hereda a dos o mas clases hijas 
+
+![captura](img19.png)
+
 ## *Ejercicio*
+
+Se conceptualizo y se realizo los respectivos cuadros de UML 
+
+![captura](img20.png)
 
 -------------------------------------------------------------------------
 
 ```Date: Martes 21 de mayo```
 
 # Onceava Clase
+
+
+## CONSTRUCTOR 
+
+- inicializar
+- es un metodo
+- = nombre class
+- siempre es publico/protect
+- se llaman una sola vez de forma automatica (en la instancia)
+- 
 
  ```java
 public class Perro {
@@ -527,11 +570,3 @@ public class Perro {
    }
 }
 ```
-## CONSTRUCTOR 
-
-- inicializar
-- es un metodo
-- = nombre class
-- siempre es publico/protect
-- se llaman una sola vez de forma automatica (en la instancia)
-- 
