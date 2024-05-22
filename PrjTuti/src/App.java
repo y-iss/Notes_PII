@@ -1,24 +1,16 @@
-import java.lang.reflect.Array;
+
+// import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
-
-import javax.sound.midi.Soundbank;
+// import javax.sound.midi.Soundbank;
 
 public class App {
+    public static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) throws Exception {
         // argumentosMain(args);
-        // FlujoDatoTeclado();
-
-        int total = 0;
-        String datos = "12-34-56";
-        Scanner sc = new Scanner(datos);
-        sc.useDelimiter("-");
-
-        while (sc.hasNextInt()) {
-            total += sc.nextInt();
-        }
-        System.out.println("total es: " + total);
-        sc.close();
+        flujoTeclado();
+        // flujoString();
 
         Persona oP = new Persona();
         Persona oP2 = new Persona(null, null, null);
@@ -38,15 +30,28 @@ public class App {
 
     }
 
-    private static void FlujoDatoTeclado() {
+    private static void flujoString() {
         int total = 0;
-        Scanner sc = new Scanner(System.in);
+        String datos = "1-2-10";
+        Scanner sc = new Scanner(datos);
+        sc.useDelimiter("-");
+
+        while (sc.hasNextInt()) {
+            total += sc.nextInt();
+        }
+        System.out.println("total es: " + total);
+        sc.close();
+    }
+
+    private static void flujoTeclado() {
+        int total = 0;
+
         System.out.println("Ingresa numeros para sumar");
         while (sc.hasNextInt()) {
             total += sc.nextInt();
         }
         System.out.println("La suma de los numeros es: " + total);
-        sc.close();
+        // sc.close();
     }
 
     private static void argumentosMain(String[] args) {
