@@ -570,3 +570,41 @@ public class Perro {
    }
 }
 ```
+
+-------------------------------------------------------------------------
+
+```Date: Miercoles 22 de mayo```
+
+# Doceava Clase
+
+## FLUJO DE CONTROL Y DIAGRAMA DE FLUJO 
+
+(IMAGEN DE LAS ESTRUCTURAS DE CONTROL)
+
+## TIPOS DE DATOS - P.O.O
+
+
+## TIPOS DE DATOS - METODOS - DOCUMENTACION, P.O.O
+
+## FUNDAMENTOS DE ENTRADA DE DATOS 
+
+## VARIABLES Y SECUENCIAS DE ESCAPE 
+
+### VARIABLES
+
+### String
+
+
+### Arrays
+
+Arrays - Bufer - Vector - String : cadena de caracteres 
+
+### Varios 
+
+## ARITHMETIC OPERATORS 
+
+## P.O.O 
+
+
+
+
