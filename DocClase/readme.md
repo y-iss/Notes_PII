@@ -10,6 +10,7 @@
 </br>
 
 ----------------------------------------------------------------------------
+============================= ***TEMARIO I*** =============================
 ```Date: Lunes 29 de abril```
 
 # Primera Clase
@@ -610,6 +611,15 @@ Arrays - Bufer - Vector - String : cadena de caracteres
 ## ARITHMETIC OPERATORS 
 
 ## P.O.O 
+
+----------------------------------------------------------------------------
+============================= ***TEMARIO II*** =============================
+```Date: Lunes 27 de mayo```
+
+# Treceava Clase
+
+## PROGRAMACION ESTRUCTURADA 
+
 
 
 
