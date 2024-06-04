@@ -50,6 +50,8 @@ public class Juego {
         // Reglas con las que pierde el juego
         if (vikingoEstaIzq) {
             // R1: lobo come caperucita
+            msg = (vikingoEstaIzq) && 
+
             if (ladoDer[0].equals(" L ") && ladoDer[2].equals(" c "))
                 msg = "Marcho la caperuita ";
 
