@@ -647,5 +647,44 @@ Arrays - Bufer - Vector - String : cadena de caracteres
 # 17 Clase
 
 ##  
+----------------------------------------------------------------------------
+
+```Date: Miercoles 5 de junio```
+
+# 18 Clase
+
+## MODELADO
+
+### Perspectivas del diagrama de clases
+
+- 1. *Conceptual*
+- 2. 
+- 3.
+
+## HERENCIA (O GENERALIZACION)
+
+- Relacion taxonomica entre un clasificador mas general y uno mas especifico
+- Cada instancia del clasificador especifico es tambien una instancia directa del clasificador general
+- El clasificador especifico hereda las caracteristicas del clasificador mas general
+- *Representa una relacion "es-un"*
+- *Un nombre de clase abstracto se muestra en cursiva*
+
+===============================================================
+
+Al extender una clase: 
+- se *heredan* todas las operaciones del padre
+- se puede *añadir* nuevas operaciones
+  
+La subclase puede elegir para las operaciones heredadas:
+- *redefinir*
+
+===============================================================
+
+(iamgen de jerarquias de clases)
+  
+#### Ejemplo (insertar imagen)
+
+### Relacion de herencia 
+//texto
 
   
