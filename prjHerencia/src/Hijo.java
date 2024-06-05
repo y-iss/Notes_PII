@@ -6,12 +6,13 @@ public class Hijo extends Padre {
     }
 
     public Hijo(String nombre) {
-        super();
+        super("Pepin");
         this.nombre = nombre;
     }
 
     @Override
     public void saludar() {
-        System.out.println(" Hola, soy hijo de papi ");
+        System.out.println(" Hola, soy " + nombre);
+        System.out.println(" Soy hijo de : " + getNombre());
     }
 }
