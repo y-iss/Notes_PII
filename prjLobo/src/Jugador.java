@@ -4,33 +4,33 @@ public class Jugador {
     private String nombre;
     private String clave;
 
-    public Jugador(){
-        setUsuario("Keyaru");
-        setNombre("Keyaru");
-        setClave("Shinigami20o4");
+    public Jugador() {
+        setUsuario("y_iss");
+        setNombre("isa");
+        setClave("1234");
     }
 
     public boolean login() {
-        String usuario  = "";
-        String clave    = "";
+        String usuario = "";
+        String clave = "";
         boolean sinLogeo = true;
 
-        do{
+        do {
             System.out.print("Ingresa tu usuario: ");
             usuario = App.sc.nextLine();
             System.out.print("Ingresa tu clave: ");
             clave = App.sc.nextLine();
 
             if (this.usuario.equalsIgnoreCase(usuario)
-                && this.clave.equalsIgnoreCase(clave))
+                    && this.clave.equalsIgnoreCase(clave))
                 return true;
 
             System.out.print("Para salir (s): ");
-            if(App.sc.nextLine().toUpperCase().equals("S"))
+            if (App.sc.nextLine().toUpperCase().equals("S"))
                 sinLogeo = false;
-        }while(sinLogeo);
+        } while (sinLogeo);
         return false;
-        
+
     }
 
     public String getUsuario() {
