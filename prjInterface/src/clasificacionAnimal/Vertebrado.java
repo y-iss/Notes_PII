@@ -1,5 +1,5 @@
 package clasificacionAnimal;
 
-public class Vertebrado {
+public class Vertebrado extends ReinoAnimal {
 
 }
