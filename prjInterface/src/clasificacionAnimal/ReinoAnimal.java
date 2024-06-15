@@ -1,12 +1,14 @@
 package clasificacionAnimal;
 
 public abstract class ReinoAnimal {
+    private String nombre;
 
-    private String
-    class ReinoAnimal {
-        return nombre; 
+    public String getNombre() {
+        return nombre;
+    }
 
-
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
 }

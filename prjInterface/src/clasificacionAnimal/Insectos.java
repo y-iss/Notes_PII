@@ -1,6 +1,6 @@
 package clasificacionAnimal;
 
-public class Insecto extends Invertebrado {
+public abstract class Insectos extends Invertebrados{
     private Integer nroPatas;
 
     public Integer getNroPatas() {
