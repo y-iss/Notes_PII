@@ -687,4 +687,34 @@ La subclase puede elegir para las operaciones heredadas:
 ### Relacion de herencia 
 //texto
 
-  
+----------------------------------------------------------------------------
+
+```Date: Lunes 10 de junio```
+
+# 19 Clase
+
+
+----------------------------------------------------------------------------
+
+```Date: Martes 11 de junio```
+
+# 20 Clase
+
+### Realizacion
+
+
+#### Implementacion de interfaces
+
+- Interface, construccion similar clase abstracta en JAVA
+
+==== DIFERENCIAS ==== 
+
+- Encabezado, palabra clave *interface*, en lugar class o abstract class 
+ 
+*public interface INombreIInterface{...}*
+
+- Todo metodo es abstracto y publico, no hay necesidad de declararlo, 
+no hace falta *"abstract public"*, por defecto todos los metodos 
+
+
+
