@@ -588,10 +588,15 @@ Arrays - Bufer - Vector - String : cadena de caracteres
 
 ### Varios 
 
+![captura](img32.png)
+
 ## ARITHMETIC OPERATORS 
+
+![captura](img33.png)
 
 ## P.O.O 
 
+![captura](img34.png)
 ----------------------------------------------------------------------------
 ============================= ***TEMARIO II*** =============================
 
@@ -601,7 +606,21 @@ Arrays - Bufer - Vector - String : cadena de caracteres
 
 ## PROGRAMACION ESTRUCTURADA 
 
+- Procedimientos → void ABC(<params>) { code }
+- Funciones → <TipoDato> ABC(<params>) { code …; return <TipoDato> }
+- Variables globales y locales
+- Librerías → *.h
 
+![captura](img35.png)
+
+- Procedimientos → void ABC(<params>) { code }
+- Funciones → <TipoDato> ABC(<params>) { code …; return <TipoDato> }
+- Variables globales y locales
+- Struct
+- Librerías → *.h
+- evento
+
+![captura](img36.png)
 
 ----------------------------------------------------------------------------
 
@@ -609,8 +628,37 @@ Arrays - Bufer - Vector - String : cadena de caracteres
 
 # 15 Clase
 
-##  
+### Programación Orientada a Objetos (POO) y UML
 
+#### Diagramas UML
+
+- permite representar de forma visual las clases y las relaciones existentes entre ellas.
+
+*Con UML se pueden crear los siguientes tipos de diagramas:*
+
+• Estáticos
+
+• De clases: modelan la estructura estática de las clases.
+
+• De objetos: para modelar la estructura estática de los objetos.
+
+• De componentes: para modelar los componentes.
+
+• De despliegue: modelan la distribución del sistema.
+
+• Dinámicos
+
+• De casos de uso: modelan los procesos de negocio.
+
+• De secuencia: modelan el traspaso de mensajes entre objetos.
+
+• De colaboración: representan las interacciones entre los objetos.
+
+• De estados: representan el comportamiento de casos de uso, objetos y operaciones.
+
+• De actividades: modelan el comportamiento de los casos de uso, objetos u operaciones 
+
+![captura](img37.png)
 ----------------------------------------------------------------------------
 
 ```Date: Lunes 3 de junio```
@@ -625,7 +673,21 @@ Arrays - Bufer - Vector - String : cadena de caracteres
 
 # 17 Clase
 
-##  
+##  UML : USE CASE DIAGRAM
+
+Se desarrollan en la etapa inicial de desarrollo y las personas
+a menudo aplican el modelado de casos de uso para los siguientes propósitos:
+
+• Especificar el contexto de un sistema
+
+• Capturar los requisitos de un sistema
+
+• Validar una arquitectura de sistemas
+
+• Impulsar la implementación y generar casos de prueba Desarrollado por analistas junto con expertos en el dominio
+
+![captura](img38.png) 
+
 ----------------------------------------------------------------------------
 
 ```Date: Miercoles 5 de junio```
@@ -659,19 +721,15 @@ La subclase puede elegir para las operaciones heredadas:
 
 ===============================================================
 
-(iamgen de jerarquias de clases)
+![captura](img39.png) 
   
-#### Ejemplo (insertar imagen)
+### Modificador de acceso
 
-### Relacion de herencia 
-//texto
+- Modificador *static* : atributo comun para todos los objetos de una misma clase, todas las clases compartiran ese mismo atributo
 
-----------------------------------------------------------------------------
+- Modificador *final* : indica atributo es una *constante*, su valor no sera modificado a lo largo de la vida del objeto.
 
-```Date: Lunes 10 de junio```
-
-# 19 Clase
-
+![captura](img40.png) 
 
 ----------------------------------------------------------------------------
 
@@ -679,8 +737,11 @@ La subclase puede elegir para las operaciones heredadas:
 
 # 20 Clase
 
-### Realizacion
+### Realizacion / Implementacion
 
+- La realización es una relación entre la clase y el objeto que contiene sus respectivos detalles a nivel de implementación (relación entre la interfaz y la clase de implementación)
+
+![captura](img41.png) 
 
 #### Implementacion de interfaces
 
@@ -695,5 +756,5 @@ La subclase puede elegir para las operaciones heredadas:
 - Todo metodo es abstracto y publico, no hay necesidad de declararlo, 
 no hace falta *"abstract public"*, por defecto todos los metodos 
 
-
+![captura](img42.png) 
 
