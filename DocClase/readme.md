@@ -380,60 +380,38 @@ $ git --version
 #### ESTRUTURAS vs O.O
 
 *Programacion estructurada* 
-- Funciones : 
-- Procedimiento :
+
+- La programación estructurada se enfoca en la claridad y la sencillez
+- Utiliza condicionales como bucles para dirigir el código de manera lógica y secuencial
 
 *Programacion Orientada Objetos* 
 
-- Metodos : 
+- La programación orientada a objetos aborda la complejidad de manera diferente 
+- Organiza el código en objetos, que son instancias de clases que encapsulan datos y funciones relacionadas
+- Este enfoque facilita la reutilización del código
 
-Diferencias entre P.E y P.O.O
+![captura](img21.png)
 
-1. P.E : 
-* Strut 
-* Variable 
+### Diferencias entre P.E y P.O.O
 
-*code:* 
-
-include <iostream>
-include <string>
-strut Animal {
-   int id;
-
-
-
-}
+![captura](img22.png)
 
 -------------------------------------------------------------------------
 
-1. P.O.O
-* Clase
-* Propiedad/Atributo
-* Variables 
 
-*code:* 
-
-public class Aninal {
-
-
-}
-
--------------------------------------------------------------------------
 
 #### ALGORITMIA 
 
+1. Problema 
 
-(TEXTO)
+2. Solucion
 
+* Algoritmo (pseucodigo)
+* Diagrama de flujo
+* Codigo (debugging)
+* Traza (prueba de escritorio)
 
-1. Pseudocodigo, diagrama flujo, trazabilidad
-
-2. Detencion de errores
-
--------------------------------------------------------------------------
-
-## CICLO FOR 
-
+![captura](img23.png)
 
 -------------------------------------------------------------------------
 
@@ -442,6 +420,9 @@ public class Aninal {
 # Quinta Clase
 
 ## CICLO BUCLE FOR 
+
+- Un bucle for es una estructura de control de código de programa que rompe la linealidad de ejecución del algoritmo y permite ejecutar el código especificado muchas veces.
+
 -------------------------------------------------------------------------
 
 ```Date: Miercoles 8 de mayo```
@@ -498,19 +479,6 @@ Se ocupan clases, el sujeto de estudio
 
 -------------------------------------------------------------------------
 
-```Date: Martes 14 de mayo```
-
-# Octava Clase
-
--------------------------------------------------------------------------
-
-```Date: Miercoles 15 de mayo```
-
-# Novena Clase
-
-
--------------------------------------------------------------------------
-
 ```Date: Lunes 20 de mayo```
 
 # Decima Clase
@@ -558,7 +526,6 @@ Se conceptualizo y se realizo los respectivos cuadros de UML
 
 # Onceava Clase
 
-
 ## CONSTRUCTOR 
 
 - inicializar
@@ -587,25 +554,37 @@ public class Perro {
 
 ## FLUJO DE CONTROL Y DIAGRAMA DE FLUJO 
 
-(IMAGEN DE LAS ESTRUCTURAS DE CONTROL)
+![captura](img24.png)
 
 ## TIPOS DE DATOS - P.O.O
 
+![captura](img25.png)
 
 ## TIPOS DE DATOS - METODOS - DOCUMENTACION, P.O.O
 
+![captura](img26.png)
+
 ## FUNDAMENTOS DE ENTRADA DE DATOS 
+
+![captura](img27.png)
 
 ## VARIABLES Y SECUENCIAS DE ESCAPE 
 
+![captura](img28.png)
+
 ### VARIABLES
+
+![captura](img29.png)
 
 ### String
 
+![captura](img30.png)
 
 ### Arrays
 
 Arrays - Bufer - Vector - String : cadena de caracteres 
+
+![captura](img31.png)
 
 ### Varios 
 
