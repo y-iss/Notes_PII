@@ -16,6 +16,45 @@
 
 # 21 Clase
 
+### Realizacion 
+
+¿Seria posible plantear un escenario donde una clase hereda de mas de una clase (herencia multiple)?
+
+imagen
+
+### Implementacion de Interfaces
+
+- Interface construccion similar a clase abstracta en Java, diferencias: 
+
+1. Encabezado 
+
+
+
+
+### Asociacion 
+
+- Relaciones entre clases en un diagrama de clases UML
+- Representado por una linea solidad 
+
+
+### Cardinalidad 
+
+- Cantidad de elementos incluidos en la asociacion 
+
+(imagen)
+
+#### UML + Asociacion (cardinalidad : 0,1,+,*)
+
+
+
+
+
+
+
+#### UML + Asociacion ( multiplicidad / cardinalidad : 0,1,+,0..*)
+
+
+
 
 
 
