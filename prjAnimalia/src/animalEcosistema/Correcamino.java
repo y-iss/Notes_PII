@@ -17,6 +17,8 @@ public class Correcamino extends Ave implements IAccion1 {
 
     @Override
     public String toString() {
-
+        return "\n Clase : " + getClass().getName()
+                + "\n Nombre : " + getNombre()
+                + "\n NroAlas : " + getNroAlas();
     }
 }
