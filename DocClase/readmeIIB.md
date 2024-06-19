@@ -1,7 +1,8 @@
 # <div align="center">**Escuela Politécnica Nacional**</div>
-### <div align = "center">**Facultad de Ingeniería en Sistemas**</div>
-### <div align = "center">**Ingeniería en Ciencias de la Computación**</div>
-### <div align = "center">**Programación II**</div>
+### <div align = "center">***Facultad de Ingeniería en Sistemas***</div>
+### <div align = "center">***Ingeniería en Ciencias de la Computación***</div>
+### <div align = "center">***Programación II***</div>
+### <div align = "center">***BIMESTRE II***</div>
 <br>
 <br>
 <p align = "center"><img src="logoepn.png"alt="Logo EPN" width"350"/>
@@ -10,11 +11,12 @@
 </br>
 
 ----------------------------------------------------------------------------
-============================= ***TEMARIO II*** =============================
+## <div align = "center"> ===== ***TEMARIO II*** =====</div>
+----------------------------------------------------------------------------
 
 ```Date: Martes 18 de junio```
 
-# 21 Clase
+# Clase 21
 
 ### Realizacion 
 
@@ -55,7 +57,18 @@ imagen
 
 
 
+----------------------------------------------------------------------------   
+
+```Date: Miercoles 19 de junio```
+
+# Clase 22 
+
+### ASOCIACION 
+
+Se vio herencian. paqueteria, interfaces, comportamientos 
+
+#### Continuacion de la actividad 
 
 
 
-----------------------------------------------------------------------------    
+----------------------------------------------------------------------------   
