@@ -22,7 +22,14 @@
 
 ¿Seria posible plantear un escenario donde una clase hereda de mas de una clase (herencia multiple)?
 
-imagen
+
+- La herencia múltiple, de cara a la consistencia de los programas y los lenguajes tiene una relativamente alta complejidad.
+
+- De ahí que algunos lenguajes orientados a objetos la permitan y otros no. 
+
+- Java no permite la herencia múltiple, pero a cambio dispone de la construcción denominada “Interface” que permite una forma de simulación o implementación limitada de la herencia múltiple.
+
+![captura](img44.png) 
 
 ### Implementacion de Interfaces
 
@@ -30,32 +37,58 @@ imagen
 
 1. Encabezado 
 
+- Se usa la **palabra clave ***interface***** en lugar de class o abstract class
 
+***public interface INombreInterface {}***
+
+2. **Todo metodo es abstracto y publico** sin necesidad de declararlo 
+
+3. Las interfaces **no tienen constructor**
+
+4. Una interfaz **solo admite campos/propiedades de tipo "public static final"** 
+
+5. La **interface se implementa (implements), no se extiende (extends)** por sus subclases. Por tanto para declarar la herencia de una interface se usa la palabra clave ***implements*** en lugar de extends 
 
 
 ### Asociacion 
 
 - Relaciones entre clases en un diagrama de clases UML
-- Representado por una linea solidad 
 
+- Representado por una linea solida entre las clases 
+
+- Las asociaciones se nombran usando un *verbo o frase verbal* que refleja el dominio del problema del mundo real 
+
+#### Asociacion simple 
+
+- Un vínculo estructural entre dos clases de pares
+
+- Hay una asociación entre Class1 y Class2
+
+- Hay una asociación que conecta la clase <<control>> Class1 y la clase <<boundary>> Class2
+
+- La relación se muestra como una línea sólida que conecta las dos clases
+
+![captura](img45.png)
 
 ### Cardinalidad 
 
 - Cantidad de elementos incluidos en la asociacion 
 
-(imagen)
+![captura](img46.png)
 
 #### UML + Asociacion (cardinalidad : 0,1,+,*)
 
+1. Bidireccional 
 
+![captura](img47.png)
 
+2. Direccional 
 
-
-
+![captura](img48.png)
 
 #### UML + Asociacion ( multiplicidad / cardinalidad : 0,1,+,0..*)
 
-
+![captura](img49.png)
 
 ----------------------------------------------------------------------------   
 
@@ -67,8 +100,10 @@ imagen
 
 Se vio herencian. paqueteria, interfaces, comportamientos 
 
-#### Continuacion de la actividad 
+### Continuacion de la actividad 
 
+La mision era realizar un diagrama de clases de la clasificacion de los animales vertebrados y realizar su respectivo codigo 
 
+![captura](img43.png)
 
 ----------------------------------------------------------------------------   
