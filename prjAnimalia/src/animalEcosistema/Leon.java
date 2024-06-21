@@ -6,34 +6,34 @@ import animalEcosistema.comportamiento.IAccionCarnivora;
 
 public class Leon extends Mamifero implements IAccion1, IAccionCarnivora {
 
-    public Leon(String nombre) {
+    public Pato alimentoPatuno; 
+
+    public Leon(String nombre) { 
         setNombre(nombre);
+        alimentoPatuno = new Pato ("Lucas");
 
     }
 
     @Override
     public String toString() {
-        return "\n Clase : " + getClass().getName()
+        return    "\n Clase : " + getClass().getName()
                 + "\n Nombre : " + getNombre();
 
     }
 
     @Override
     public void comer() {
-
-        throw new UnsupportedOperationException("Unimplemented method 'comer'");
+        System.out.println("Leon come hambre .... ");
     }
 
     @Override
     public void correr(Pato alimentoPatuno) {
-        
-        throw new 'correr'")
+        System.out.println("Leon come : " + alimentoPatuno.toString());
     }
 
     @Override
     public void correr() {
-
-        throw new UnsupportedOperationException("Unimplemented method 'correr'");
+        System.out.println("Leon correr ");
     }
 
 }
