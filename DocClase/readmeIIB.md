@@ -107,3 +107,12 @@ La mision era realizar un diagrama de clases de la clasificacion de los animales
 ![captura](img43.png)
 
 ----------------------------------------------------------------------------   
+  
+```Date: Lunes 24 de junio```
+
+# Clase 23
+
+Se continuo con el ejercicio que involucraba herencia, interface y asosiacion 
+
+
+---------------------------------------------------------------------------- 
