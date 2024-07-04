@@ -178,7 +178,9 @@ public class Automovil {
 
  ![captura](img53.png)
 
-``` interface Player {
+
+``` 
+interface Player {
 void play ();
 void stop();
 void pause ();
@@ -239,3 +241,11 @@ public class Animal implements Coloreable {
 ```
 ----------------------------------------------------------------------------  
 
+```Date: Lunes 2 de Julio```
+
+# Clase 25
+
+
+
+
+----------------------------------------------------------------------------  
