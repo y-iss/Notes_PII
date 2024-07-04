@@ -29,7 +29,7 @@
 
 - Java no permite la herencia múltiple, pero a cambio dispone de la construcción denominada “Interface” que permite una forma de simulación o implementación limitada de la herencia múltiple.
 
-![captura](img44.png) 
+[captura](img44.png)
 
 ### Implementacion de Interfaces
 
@@ -88,7 +88,7 @@
 
 #### UML + Asociacion ( multiplicidad / cardinalidad : 0,1,+,0..*)
 
-![captura](img49.png)
+ ![captura](img49.png)
 
 ----------------------------------------------------------------------------   
 
@@ -114,5 +114,128 @@ La mision era realizar un diagrama de clases de la clasificacion de los animales
 
 Se continuo con el ejercicio que involucraba herencia, interface y asosiacion 
 
+(una imagen del codigo mas la ejecucion del codigo)
 
 ---------------------------------------------------------------------------- 
+
+ 
+  
+```Date: Lunes 1 de Julio```
+
+# Clase 24
+
+## Composicion 
+
+### UML + Composicion 
+
+- Hay una dependencia en los ciclos de vida 
+- Son partes de (componentes)
+- Costructor obligatorio de la clase 
+
+    ![captura](img50.png)
+
+
+```java
+public class Automovil {
+
+    public Estereo estereo; 
+    public Motor motor;
+    
+    public Automovil(); {
+        estereo = new Estereo(); 
+        motor = new Motor(); 
+    }
+}
+```
+### UML + Agregacion 
+
+- Hay una dependencia en los ciclos de vida 
+
+ ![captura](img51.png)
+
+
+ ```java
+public class Automovil {
+
+    public Estereo estereo; 
+    public Motor motor;
+    
+    public Automovil(); { 
+    }
+
+    public void ensamblar (Estereo e, Motor m){
+        estereo = e; 
+        motor = m; 
+    }
+}
+```
+
+### UML + Herencia
+
+ ![captura](img52.png)
+
+ - La interfaz hereda todas las operaciones de la interfaz extendida 
+
+ ![captura](img53.png)
+
+``` interface Player {
+void play ();
+void stop();
+void pause ();
+void reverse();
+}
+
+interface Recorder extends Player {
+void record();
+}
+
+class TapePlayer implements Recorder {
+public void play () { ... }
+public void stop() { ... }
+public void pause () { ... }
+public void reverse() { ... }
+public void record() { ... }
+}
+```
+
+### UML + Interface 
+
+1. 
+
+ ![captura](img54.png)
+
+```java
+public interface Coloreable {
+    public void cambiarDeColor(Color c); 
+}
+```
+
+```java
+public class Automovil implements Coloreable {
+    public void cambiarDeColor(Color c){
+        // se debe implementar 
+    }
+}
+```
+
+2. 
+
+![captura](img55.png)
+
+```java
+public class Persona implements Coloreable {
+     public void cambiarDeColor(Color c) {
+        // se debe implementar
+     }
+}
+```
+
+```java
+public class Animal implements Coloreable {
+    public void cambiarDeColor(Color c){
+        // se debe implementar 
+    }
+}
+```
+----------------------------------------------------------------------------  
+
