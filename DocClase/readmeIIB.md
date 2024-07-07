@@ -29,7 +29,9 @@
 
 - Java no permite la herencia múltiple, pero a cambio dispone de la construcción denominada “Interface” que permite una forma de simulación o implementación limitada de la herencia múltiple.
 
-[captura](img44.png)
+
+![captura](img44.png)
+
 
 ### Implementacion de Interfaces
 
