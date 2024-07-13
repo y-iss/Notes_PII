@@ -241,13 +241,38 @@ public class Animal implements Coloreable {
     }
 }
 ```
+
+### UML + Herencia Multiple 
+
+- UML es una herramienta estandarizada y visual que facilita la representación de sistemas orientados a objetos mediante diversos diagramas. 
+
+- Permite modelar estructuras complejas, incluyendo la herencia múltiple, que permite a una clase heredar de múltiples clases base. 
+
+- Aunque la herencia múltiple promueve la reutilización de código, también introduce complejidad, la cual puede ser analizada y documentada eficazmente con UML.
+
+    ![captura](img56.png)
+
+### UML + Herencia Multiple: Alternativa 
+
+- Una alternativa para representar la herencia múltiple en UML es utilizar interfaces y asociaciones. 
+
+- En lugar de heredar de múltiples clases, una clase puede implementar múltiples interfaces. Cada interfaz define un conjunto de métodos sin implementación, y la clase concreta proporciona las implementaciones necesarias.
+
+- Esto ayuda a mantener la claridad y la simplicidad en los diagramas UML, evitando la complejidad y los problemas potenciales de la herencia múltiple.
+
+    ![captura](img57.png)
+
 ----------------------------------------------------------------------------  
 
 ```Date: Lunes 2 de Julio```
 
 # Clase 25
 
+## Agregacion 
 
+- Relación "Parte-Todo": La agregación se utiliza para representar una relación "parte-todo" entre objetos. En esta relación, un objeto más grande (el contenedor o "todo") está compuesto por uno o más objetos más pequeños (las partes).
+
+- Los objetos parte pueden existir independientemente del objeto contenedor. Esto significa que las partes no necesariamente deben ser destruidas cuando el contenedor es destruido. 
 
 
 ----------------------------------------------------------------------------  
