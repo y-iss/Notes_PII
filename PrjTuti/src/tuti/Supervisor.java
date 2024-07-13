@@ -1,5 +1,5 @@
-public class Supervisor extends Cajero {
-
+package tuti;
+public class Supervisor extends Cajero{
     private String codigoAutorizacion;
 
     public String getCodigoAutorizacion() {
@@ -9,5 +9,5 @@ public class Supervisor extends Cajero {
     public void setCodigoAutorizacion(String codigoAutorizacion) {
         this.codigoAutorizacion = codigoAutorizacion;
     }
-
+    
 }
