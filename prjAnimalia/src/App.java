@@ -1,5 +1,5 @@
-import animalEcosistema.Pato; 
-import animalEcosistema.Leon; 
+import morthalEcosistema.Leon;
+import morthalEcosistema.Pato; 
 
 public class App {
     public static void main(String[] args) throws Exception {
