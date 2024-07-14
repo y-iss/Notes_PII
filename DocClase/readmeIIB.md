@@ -224,7 +224,7 @@ public class Automovil implements Coloreable {
 
 2. 
 
-![captura](img55.png)
+![captura](img55.png) 
 
 ```java
 public class Persona implements Coloreable {
@@ -281,16 +281,39 @@ public class Animal implements Coloreable {
 
 # Clase 26
 
+Ocupamos el pjrTuti para hacer cambios, se creando tres packages: 
 
+1. EPN 
 
+    ![captura](img58.png)
 
-----------------------------------------------------------------------------  
+2. herenciaInterfaz
 
-```Date: Miercoles 4 de Julio```
+    ![captura](img59.png)
 
-# Clase 27
+3. tuti 
 
+    ![captura](img60.png)
 
+De igual manera se crearon adicionalmente dos UML: 
+
+El 01DiagramaCasoUso se creo anteriormente:  
+
+![captura](img61.png)
+
+Adicional: 
+
+02InterfazClases
+
+![captura](img62.png)
+
+03HerenciaInterfaz
+
+![captura](img63.png)
+
+Ejecucion del codigo: 
+
+![captura](img64.png)
 
 
 ----------------------------------------------------------------------------  
@@ -299,7 +322,16 @@ public class Animal implements Coloreable {
 
 # Clase 28
 
+Mision: Crear el escenario con prototipos tangibles 
 
+![captura](img65.png)
 
+El prototipo fue el siguiente: 
+
+![captura](img66.png)
 
 ----------------------------------------------------------------------------  
+
+```Date: Miercoles 10 de Julio```
+
+# Clase 29
