@@ -30,7 +30,7 @@ public class App {
         ProfeFrances    pf = new ProfeFrances();
         ProfeIngles     pi = new ProfeIngles();
         Poliglota       p  = new Poliglota();
-        p.nombre = "pepeito";
+        p.nombre = "Yuki";
         pi.ensenar(p);
         pf.ensenar(p);
         pd.ensenar(p);
