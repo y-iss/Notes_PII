@@ -116,7 +116,7 @@ La mision era realizar un diagrama de clases de la clasificacion de los animales
 
 Se continuo con el ejercicio que involucraba herencia, interface y asosiacion 
 
-(una imagen del codigo mas la ejecucion del codigo)
+![captura](img67.png)
 
 ---------------------------------------------------------------------------- 
 
@@ -338,8 +338,25 @@ El prototipo fue el siguiente:
 
 
 
+
+
+
 ----------------------------------------------------------------------------  
 
 ```Date: Lunes 15 de Julio```
 
 # Clase 30
+
+
+
+
+----------------------------------------------------------------------------  
+
+```Date: Lunes 15 de Julio```
+
+# Clase 31
+
+
+
+
+----------------------------------------------------------------------------  
