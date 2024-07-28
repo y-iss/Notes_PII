@@ -336,9 +336,33 @@ El prototipo fue el siguiente:
 
 # Clase 29
 
+## Arq. General 
+
+(Diagrama ExoBot)
+
+## Arquitentura N-TIER 
+
+La arquitectura N-TIER es un modelo de diseño de software que divide una aplicación en múltiples capas o niveles, cada uno con responsabilidades específicas. Generalmente incluye:
+
+1. **Capa de Presentación**: Interfaz de usuario.
+
+    - La interfaz es la cara de la aplicacion, donde la experiencia del usuario se moldea y existe interaccion 
+
+2. **Capa de Aplicación**: Lógica de negocio.
+
+    - Adquiere vida propia, las reglas empresariales, el flujo de procesos y calculos habitan aqui
+
+    - La funcionalidad e inteligencia se unen para dar vida a la aplicacion 
 
 
 
+3. **Capa de Datos**: Gestión de bases de datos.
+
+    - La capa final se sumerge en la base de datos
+
+    - Se obtienen, modifican y almacena datos
+
+    ![captura](img68.png)
 
 
 ----------------------------------------------------------------------------  
@@ -347,6 +371,7 @@ El prototipo fue el siguiente:
 
 # Clase 30
 
+![captura](img69.png) ![captura](img70.png)
 
 
 
@@ -356,7 +381,7 @@ El prototipo fue el siguiente:
 
 # Clase 31
 
-
+![captura](img71.png)
 
 
 ----------------------------------------------------------------------------  
@@ -366,6 +391,62 @@ El prototipo fue el siguiente:
 # Clase 32
 
 ## SQLite 
+
+
+
+
+
+
+----------------------------------------------------------------------------  
+----------------------------------------------------------------------------  
+
+```Date: Lunes 22 de Julio```
+
+# Clase 33
+
+## 
+
+
+
+
+
+
+----------------------------------------------------------------------------  
+----------------------------------------------------------------------------  
+
+```Date: Martes 23 de Julio```
+
+# Clase 34
+
+## 
+
+
+
+
+
+
+----------------------------------------------------------------------------  
+----------------------------------------------------------------------------  
+
+```Date: Miercoles 24 de Julio```
+
+# Clase 35
+
+## 
+
+
+
+
+
+
+----------------------------------------------------------------------------  
+----------------------------------------------------------------------------  
+
+```Date:  de Julio```
+
+# Clase 
+
+##  
 
 
 
