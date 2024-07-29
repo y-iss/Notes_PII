@@ -463,12 +463,22 @@ IGUALARSE EL CODIGO EXOBOT
 
 # Clase 34
 
-## 
+## DAC + Data Base 
+
+1. DAC:
+
+Conexión a la Base de Datos: Establece y gestiona la conexión.
+Consultas SQL: Ejecuta sentencias para interactuar con la base de datos.
+ORM: Herramientas como Hibernate que mapean objetos a datos relacionales.
+
+2. Base de Datos:
+
+Tablas: Estructuras que almacenan datos.
+Índices: Mejoran la velocidad de las consultas.
+Procedimientos Almacenados: Programas que ejecutan lógica en la base de datos
 
 
-
-
-
+IGUALARSE EL DESARROLLO 
 
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
