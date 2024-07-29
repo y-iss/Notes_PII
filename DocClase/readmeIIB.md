@@ -9,6 +9,13 @@
 </p>
 </br>
 </br>
+</p>
+</br>
+</br>
+</p>
+</br>
+</br>
+
 
 ----------------------------------------------------------------------------
 ## <div align = "center"> ===== ***TEMARIO II*** =====</div>
@@ -114,14 +121,20 @@ La mision era realizar un diagrama de clases de la clasificacion de los animales
 
 # Clase 23
 
-Se continuo con el ejercicio que involucraba herencia, interface y asosiacion 
+- La **herencia** en programación orientada a objetos permite que una clase (`subclase`) derive de otra (`superclase`), heredando sus atributos y métodos, lo que facilita la reutilización del código. 
+
+- Una **interfaz** define un conjunto de métodos que una clase debe implementar, garantizando que las clases que la implementen proporcionen comportamientos específicos. 
+
+- La **asociación** describe relaciones entre objetos de diferentes clases, permitiendo que un objeto contenga referencias a otros, facilitando la colaboración entre ellos. Estos conceptos ayudan a crear sistemas más organizados, flexibles y mantenibles.
+
+
+Se continuo con el ejercicio que involucraba herencia, interface y asociacion:
 
 ![captura](img67.png)
 
 ---------------------------------------------------------------------------- 
 
  
-  
 ```Date: Lunes 1 de Julio```
 
 # Clase 24
@@ -354,8 +367,6 @@ La arquitectura N-TIER es un modelo de diseño de software que divide una aplica
 
     - La funcionalidad e inteligencia se unen para dar vida a la aplicacion 
 
-
-
 3. **Capa de Datos**: Gestión de bases de datos.
 
     - La capa final se sumerge en la base de datos
@@ -371,9 +382,18 @@ La arquitectura N-TIER es un modelo de diseño de software que divide una aplica
 
 # Clase 30
 
+- El Modelo Entidad-Relación (MER) es una herramienta fundamental en el diseño de bases de datos
+
+- Representa la estructura lógica de una base de datos de manera visual mediante diagramas que ilustran las entidades y las relaciones entre ellas.
+
+1. **Entidades**: Son objetos o conceptos del mundo real que tienen existencia propia y sobre los cuales se desea almacenar información, como `Cliente`, `Producto` o `Pedido`.
+
+2. **Atributos**: Son las propiedades o características de las entidades, como `nombre`, `dirección` y `fecha` en una entidad `Cliente`.
+
+3. **Relaciones**: Describen cómo las entidades están conectadas entre sí. Por ejemplo, una relación `Compra` podría conectar las entidades `Cliente` y `Producto`.
+
+
 ![captura](img69.png) ![captura](img70.png)
-
-
 
 ----------------------------------------------------------------------------  
 
@@ -392,10 +412,13 @@ La arquitectura N-TIER es un modelo de diseño de software que divide una aplica
 
 ## SQLite 
 
+- SQLite es un sistema de gestión de bases de datos relacional, autocontenido y ligero, que no requiere un servidor separado
 
+- Almacena la base de datos en un único archivo y es muy utilizado en aplicaciones móviles, navegadores web y dispositivos integrados por su simplicidad y eficiencia
 
+Adiconal se realizo un ejercicio de demostracion en vscode con las extensiones de SQLite 3 entre otros
 
-
+![captura](img72.png)
 
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
@@ -404,13 +427,35 @@ La arquitectura N-TIER es un modelo de diseño de software que divide una aplica
 
 # Clase 33
 
-## 
+## Arquitectura N-Layer
 
+- La arquitectura N-Layer es un modelo de diseño de software que organiza una aplicación en varias capas, cada una con responsabilidades específicas. 
 
+- Capas mas comunes: 
 
+1. **Capa de Presentación**:
+   - **Función**: Maneja la interacción con el usuario. Presenta la interfaz gráfica y recibe las entradas del usuario.
+   - **Componentes**: HTML, CSS, JavaScript, frameworks de UI como React o Angular.
 
+2. **Capa de Lógica de Negocio**:
+   - **Función**: Contiene la lógica de negocio de la aplicación. Procesa los datos entre la capa de presentación y la capa de datos.
+   - **Componentes**: Lenguajes de programación como Java, C#, Python, reglas de negocio y validaciones.
 
+3. **Capa de Acceso a Datos**:
+   - **Función**: Gestiona la comunicación con la base de datos. Realiza operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
+   - **Componentes**: ORM (Object-Relational Mapping) como Hibernate o Entity Framework, consultas SQL.
 
+4. **Capa de Datos**:
+   - **Función**: Almacena los datos de la aplicación.
+   - **Componentes**: Bases de datos relacionales (MySQL, PostgreSQL) o NoSQL (MongoDB).
+
+5. **Capa de Servicios** (opcional):
+   - **Función**: Facilita la integración y comunicación entre la aplicación y servicios externos.
+   - **Componentes**: APIs RESTful, servicios SOAP.
+
+![captura](img73.png)
+
+IGUALARSE EL CODIGO EXOBOT 
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
 
