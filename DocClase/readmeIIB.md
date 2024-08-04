@@ -457,8 +457,6 @@ Adiconal se realizo un ejercicio de demostracion en vscode con las extensiones d
 
 IGUALARSE EL CODIGO EXOBOT 
 
-
-
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
 
@@ -490,21 +488,77 @@ IGUALARSE EL DESARROLLO
 
 # Clase 35
 
-## 
+## Business Logic 
 
+Relación entre "Business Logic" y "Business Logic Layer".
 
+- Business Logic (Logica de Negocio) y Business Logic Layer (Capa de Logica de Negocio) estan estrechamente relacionados, pero no son exactamente lo mismo:
 
+**1. Business Logic (Logica de Negocio):**
 
+   - Es el conjunto de reglas, cálculos y procesos que definen como opera un negocio
+   - Incluye las reglas, decisiones, cálculos y manipulaciones de datos específicos del negocio
 
+**2. Business Logic Layer (Capa de Logica de Negocio):**
+
+   - Es una capa en la arquitectura de software donde se implementa la logica de negocio
+   - Forma parte de un diseño de software en capas, generalmente situandose entre la capa de presentacion y la capa de datos
+
+**La diferencia principal es:**
+
+- La logica de negocio es el concepto, las reglas y procesos en si
+- La capa de logica de negocio es la implementacion estructurada de esa logica dentro de la arquitectura del software
+
+**Beneficios de usar una Business Logic Layer:**
+
+1. Separacion de responsabilidades
+2. Reutilizacion de codigo
+3. Mantenibilidad mejorada
+4. Facilita las pruebas unitarias
+5. Mejor escalabilidad
+
+- Business Logic Layer es el lugar donde se implementa la Business Logic en una arquitectura de software en capas
 
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
 
-```Date:  de Julio```
+```Date: Miercoles 31 de Julio```
 
-# Clase 
+# Clase 36
 
-##  
+## GUI (Interfaz Grafica de Usuario)
+
+**1. Elementos visuales:** Utiliza componentes graficos como botones, menus, ventanas, iconos y barras de herramientas.
+
+**2. Interactividad:** Permite la interaccion directa del usuario mediante dispositivos de entrada como el ratón o la pantalla tactil.
+
+**3. Retroalimentacion visual:** Proporciona respuestas visuales inmediatas a las acciones del usuario, como cambios de color o animaciones.
+
+**4. Diseño intuitivo:** Organiza la informacion y controles de manera logica y facil de entender.
+
+**5. Consistencia:** Mantiene un estilo y comportamiento uniforme en toda la interfaz.
+
+**6. Accesibilidad:** Incluye características para usuarios con diferentes capacidades, como opciones de alto contraste o compatibilidad con lectores de pantalla.
+
+**7. Personalizacion:** Permite a los usuarios ajustar ciertos aspectos de la interfaz segun sus preferencias.
+
+**8. Múltiples ventanas:** Posibilita la gestion de varias ventanas o pantallas simultaneamente.
+
+**9. Ayuda contextual:** Ofrece informacion de ayuda relacionada con la tarea o elemento actual.
+
+**10. Representación visual de datos:** Utiliza graficos, diagramas y otros elementos visuales para presentar informacion compleja.
+
+**11. Drag and drop:** Permite mover elementos en la interfaz mediante arrastre.
+
+**12. Atajos de teclado:** Ofrece comandos rapidos para usuarios avanzados.
+
+**13. Responsividad:** Se adapta a diferentes tamaños de pantalla y dispositivos.
+
+**14. Gestion de errores:** Muestra mensajes de error claros y ofrece soluciones cuando es posible.
+
+**15. Navegación clara:** Proporciona una estructura de navegación facil de entender y usar.
+
+
 
 
 
