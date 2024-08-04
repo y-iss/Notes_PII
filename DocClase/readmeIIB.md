@@ -456,6 +456,9 @@ Adiconal se realizo un ejercicio de demostracion en vscode con las extensiones d
 ![captura](img73.png)
 
 IGUALARSE EL CODIGO EXOBOT 
+
+
+
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
 
