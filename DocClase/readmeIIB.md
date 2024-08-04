@@ -558,11 +558,10 @@ Relación entre "Business Logic" y "Business Logic Layer".
 
 **15. Navegación clara:** Proporciona una estructura de navegación facil de entender y usar.
 
+![captura](img74.png)
 
+Este es el GUI que se ha realizado en clase: 
 
-
-
-
-
+![captura](img75.png)
 
 ----------------------------------------------------------------------------  
