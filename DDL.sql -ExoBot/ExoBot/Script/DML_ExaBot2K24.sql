@@ -9,9 +9,9 @@ INSERT INTO PersonaTipo
 ,('Expero Espanol');
 INSERT INTO Persona
 (IdPersonaTipo,     Cedula,     Nombre) VALUES
-(3, '1738495768', 'Rias Gremory') 
-,(4, '1748375846', 'Nino Nakano') 
-,(1, '1710293847', 'Akeno Himejima');
+(3, '1738495768', 'Yuki') 
+,(4, '1748375846', 'Isa') 
+,(1, '1710293847', 'Ale');
 
 INSERT INTO IABot
 (Nombre, Observacion) VALUES
@@ -54,7 +54,7 @@ INSERT INTO Ensamblar
 ,('1', '4', '2');
 
 UPDATE  Persona
-SET     Nombre      = 'Akeno Himejima'
+SET     Nombre      = 'Yuki'
 WHERE   IdPersona   = '3';
 
 SELECT tp.Nombre 'Cargo' , p.Nombre 'Nombres'
