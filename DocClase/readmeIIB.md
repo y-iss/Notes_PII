@@ -27,7 +27,20 @@
 
 ### Realizacion 
 
-¿Seria posible plantear un escenario donde una clase hereda de mas de una clase (herencia multiple)?
+
+- En POO, la realización implica transformar el diseño conceptual en clases y objetos concretos. 
+  
+- Este proceso incluye definir atributos y metodos, establecer relaciones entre clases (como herencia y composición), e implementar interfaces. 
+  
+- La realizacion en POO requiere pensar en terminos de objetos que interactuan, encapsular datos y comportamientos, y aplicar principios como abstraccion, polimorfismo y modularidad. 
+  
+- El objetivo es crear un sistema flexible y reutilizable que modele eficazmente el dominio del problema y facilite el mantenimiento y la expansion del codigo.
+
+
+![captura](img44.png)
+
+
+*¿Seria posible plantear un escenario donde una clase hereda de mas de una clase (herencia multiple)?*
 
 
 - La herencia múltiple, de cara a la consistencia de los programas y los lenguajes tiene una relativamente alta complejidad.
@@ -37,7 +50,6 @@
 - Java no permite la herencia múltiple, pero a cambio dispone de la construcción denominada “Interface” que permite una forma de simulación o implementación limitada de la herencia múltiple.
 
 
-![captura](img44.png)
 
 
 ### Implementacion de Interfaces
@@ -85,19 +97,72 @@
 
 ![captura](img46.png)
 
+
+
+
+
 #### UML + Asociacion (cardinalidad : 0,1,+,*)
 
-1. Bidireccional 
+***1. Bidireccional***
+
+- Ambas clases conocen y pueden acceder a la otra.
+
+- **Cardinalidad:**
+- 
+  - **0..1:** Una clase puede estar asociada con ninguna o una instancia de la otra.
+  
+  - **1:** Una clase debe estar asociada con exactamente una instancia de la otra.
+
+  - **\***: Una clase puede estar asociada con muchas instancias de la otra.
+
+  - **0..\***: Una clase puede estar asociada con ninguna o muchas instancias de la otra.
 
 ![captura](img47.png)
 
-2. Direccional 
+1. Direccional 
+
+- Solo una clase conoce a la otra, es decir, la navegación es posible solo en una dirección.
+  
+- **Cardinalidad:**
+  
+  - **0..1:** Una clase puede estar asociada con ninguna o una instancia de la otra.
+
+  - **1:** Una clase debe estar asociada con exactamente una instancia de la otra.
+
+  - **\***: Una clase puede estar asociada con muchas instancias de la otra.
+
+  - **0..\***: Una clase puede estar asociada con ninguna o muchas instancias de la otra.
+
 
 ![captura](img48.png)
 
 #### UML + Asociacion ( multiplicidad / cardinalidad : 0,1,+,0..*)
 
+Claro, aquí está la descripción de las cardinalidades en UML sin ejemplos:
+
+### **Cardinalidades en UML**
+
+1. **0**
+   - **Definición:** Indica que puede no haber ninguna instancia de la clase asociada.
+
+2. **1**
+   - **Definición:** Indica que debe haber exactamente una instancia de la clase asociada.
+
+3. **+**
+   - **Definición:** Indica que debe haber una o más instancias de la clase asociada (equivalente a `1..*`).
+
+4. **0..***
+   - **Definición:** Indica que puede haber cero o más instancias de la clase asociada.
+
+### **Representación en UML**
+
+- **0:** Se coloca `0` en el extremo de la línea de asociación.
+- **1:** Se coloca `1` en el extremo de la línea de asociación.
+- **+:** Se coloca `+` en el extremo de la línea de asociación.
+- **0..*:** Se coloca `0..*` en el extremo de la línea de asociación.
+
  ![captura](img49.png)
+
 
 ----------------------------------------------------------------------------   
 
@@ -107,7 +172,13 @@
 
 ### ASOCIACION 
 
-Se vio herencian. paqueteria, interfaces, comportamientos 
+- La asociacion en POO es una relacion en la que un objeto utiliza o depende de otro para realizar sus funciones. 
+  
+- A diferencia de la herencia, donde hay una relacion "es-un", en la asociacion los objetos colaboran entre si, manteniendo su independencia. 
+  
+- Este tipo de relacion permite modularidad y reutilización de codigo, ya que facilita la interaccion entre diferentes clases sin necesidad de que una derive de otra.
+
+Adicional en la clase de hoy se vio herencian. paqueteria, interfaces, comportamientos 
 
 ### Continuacion de la actividad 
 
@@ -141,10 +212,18 @@ Se continuo con el ejercicio que involucraba herencia, interface y asociacion:
 
 ## Composicion 
 
+- La composicion en Java, dentro de POO, es un tipo de asociacion fuerte donde un objeto "contenedor" esta compuesto por uno o mas objetos "componente". 
+  
+- En esta relacion, los componentes no pueden existir independientemente del contenedor; si el contenedor es destruido, los componentes tambien lo son. 
+  
+- La composicion se utiliza para modelar relaciones "parte-todo" y es clave para crear estructuras complejas a partir de objetos mas simples, promoviendo la reutilizacion y la encapsulacion del codigo.
+
 ### UML + Composicion 
 
 - Hay una dependencia en los ciclos de vida 
+
 - Son partes de (componentes)
+
 - Costructor obligatorio de la clase 
 
     ![captura](img50.png)
@@ -162,6 +241,8 @@ public class Automovil {
     }
 }
 ```
+
+
 ### UML + Agregacion 
 
 - Hay una dependencia en los ciclos de vida 
@@ -194,7 +275,7 @@ public class Automovil {
  ![captura](img53.png)
 
 
-``` 
+``` java
 interface Player {
 void play ();
 void stop();
@@ -215,6 +296,7 @@ public void record() { ... }
 }
 ```
 
+
 ### UML + Interface 
 
 1. 
@@ -227,6 +309,8 @@ public interface Coloreable {
 }
 ```
 
+
+
 ```java
 public class Automovil implements Coloreable {
     public void cambiarDeColor(Color c){
@@ -234,6 +318,8 @@ public class Automovil implements Coloreable {
     }
 }
 ```
+
+
 
 2. 
 
@@ -246,6 +332,9 @@ public class Persona implements Coloreable {
      }
 }
 ```
+
+
+
 
 ```java
 public class Animal implements Coloreable {
@@ -287,6 +376,7 @@ public class Animal implements Coloreable {
 
 - Los objetos parte pueden existir independientemente del objeto contenedor. Esto significa que las partes no necesariamente deben ser destruidas cuando el contenedor es destruido. 
 
+![captura](img76.png)
 
 ----------------------------------------------------------------------------  
 
@@ -351,7 +441,41 @@ El prototipo fue el siguiente:
 
 ## Arq. General 
 
-(Diagrama ExoBot)
+**1. Clases y Objetos**
+
+*Clases:* 
+
+- Las clases son plantillas para crear objetos. Definen los atributos (datos) y métodos (funciones) que los objetos creados a partir de ellas tendrán.
+
+*Objetos:* 
+
+- Son instancias de una clase. Cada objeto tiene su propio estado y comportamiento, según lo definido por su clase.
+
+**1. Principios de Diseño de POO**
+
+*Encapsulamiento:* 
+
+- Protege los datos internos de una clase y solo expone una interfaz pública para interactuar con esos datos. 
+  
+- Esto ayuda a mantener el control sobre el estado del objeto y evita modificaciones no deseadas.
+
+*Herencia:* 
+
+- Permite crear una nueva clase basada en una clase existente, heredando atributos y métodos. 
+  
+- Facilita la reutilización de código y el establecimiento de jerarquías entre clases.
+  
+*Polimorfismo:*
+
+- Permite que diferentes clases utilicen el mismo método de diferentes maneras. 
+  
+- Se puede lograr mediante la sobrescritura (overriding) y la sobrecarga (overloading) de métodos.
+
+*Abstracción:* 
+
+- Permite representar conceptos complejos mediante clases y objetos, ocultando detalles innecesarios y exponiendo solo lo esencial.
+
+![captura](img77.png)
 
 ## Arquitentura N-TIER 
 
@@ -455,7 +579,6 @@ Adiconal se realizo un ejercicio de demostracion en vscode con las extensiones d
 
 ![captura](img73.png)
 
-IGUALARSE EL CODIGO EXOBOT 
 
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
@@ -478,8 +601,7 @@ Tablas: Estructuras que almacenan datos.
 Índices: Mejoran la velocidad de las consultas.
 Procedimientos Almacenados: Programas que ejecutan lógica en la base de datos
 
-
-IGUALARSE EL DESARROLLO 
+![captura](img78.png)
 
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
@@ -497,27 +619,38 @@ Relación entre "Business Logic" y "Business Logic Layer".
 **1. Business Logic (Logica de Negocio):**
 
    - Es el conjunto de reglas, cálculos y procesos que definen como opera un negocio
+  
    - Incluye las reglas, decisiones, cálculos y manipulaciones de datos específicos del negocio
 
 **2. Business Logic Layer (Capa de Logica de Negocio):**
 
    - Es una capa en la arquitectura de software donde se implementa la logica de negocio
+
    - Forma parte de un diseño de software en capas, generalmente situandose entre la capa de presentacion y la capa de datos
 
 **La diferencia principal es:**
 
 - La logica de negocio es el concepto, las reglas y procesos en si
+
 - La capa de logica de negocio es la implementacion estructurada de esa logica dentro de la arquitectura del software
 
 **Beneficios de usar una Business Logic Layer:**
 
 1. Separacion de responsabilidades
+
 2. Reutilizacion de codigo
+
 3. Mantenibilidad mejorada
+
 4. Facilita las pruebas unitarias
+
 5. Mejor escalabilidad
 
 - Business Logic Layer es el lugar donde se implementa la Business Logic en una arquitectura de software en capas
+
+Adicional en el proyecto de ExoBot se creo la carpeta de BusinessLogic: 
+
+![captura](img79.png)
 
 ----------------------------------------------------------------------------  
 ----------------------------------------------------------------------------  
@@ -565,3 +698,69 @@ Este es el GUI que se ha realizado en clase:
 ![captura](img75.png)
 
 ----------------------------------------------------------------------------  
+
+```Date: Miercoles 31 de Julio```
+
+# Clase 37
+
+## Debug
+
+- El proceso de depuración o DEBUG es fundamental en el desarrollo de software orientado a objetos. 
+  
+- En POO, los programas tienden a ser más complejos debido a la interaccion entre multiples objetos, herencia, polimorfismo y encapsulamiento. 
+  
+- Esto hace que la depuración sea mas desafiante pero también mas crucial
+
+**1. Inspeccion de objetos:** Permite examinar el estado interno de los objetos durante la ejecucion del programa.
+
+**2. Seguimiento de metodos:** Facilita rastrear las llamadas a metodos y su flujo de ejecucion dentro de las clases.
+
+**3. Puntos de interrupcion (breakpoints):** Se pueden establecer en metodos especificos o lineas de codigo para pausar la ejecucion.
+
+**4. Visualizacion de la jerarquia de clases:** Ayuda a entender las relaciones entre clases durante la depuracion.
+
+**5. Evaluacion de expresiones:** Permite evaluar expresiones y propiedades de objetos en tiempo real.
+
+**6. Step-by-step:** Posibilidad de ejecutar el codigo línea por linea para analizar el comportamiento.
+
+**7. Depuracion de constructores:** Facilita la inspeccion de la creacion y inicializacion de objetos.
+
+**8. Manejo de excepciones:** Ayuda a identificar y rastrear errores en tiempo de ejecucion.
+
+**9. Visualizacion de variables miembro:** Permite examinar los atributos de los objetos en cada paso de la ejecucion.
+
+**10. Depuracion de herencia:** Facilita el seguimiento de metodos heredados y polimorfismo.
+
+![captura](img80.png)
+
+----------------------------------------------------------------------------  
+
+```Date: Miercoles 31 de Julio```
+
+# Clase 38
+
+## JAR
+
+
+
+**1. Empaquetado:** Un JAR agrupa multiples clases, interfaces y recursos en un solo archivo.
+
+**2. Portabilidad:** Facilita la distribución de aplicaciones Java, ya que todo lo necesario está en un unico archivo.
+
+**3. Compresion:** Los archivos dentro del JAR están comprimidos, reduciendo el tamaño total.
+
+**4. Ejecucion directa:** Pueden ser ejecutables si se especifica la clase principal en el manifiesto.
+
+**5. Seguridad:** Permite firmar digitalmente el contenido para verificar su integridad.
+
+**6. Modularidad:** Facilita la organizacion de grandes proyectos en modulos independientes.
+
+**7. Reutilizacion de codigo:** Simplifica la inclusion de bibliotecas externas en proyectos.
+
+**8. Versionado:** Ayuda a manejar diferentes versiones de clases y paquetes.
+
+**9. Encapsulacion:** Oculta los detalles de implementacion, exponiendo solo las interfaces necesarias.
+
+
+----------------------------------------------------------------------------  
+
