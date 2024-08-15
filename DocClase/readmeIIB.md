@@ -762,5 +762,5 @@ Este es el GUI que se ha realizado en clase:
 **9. Encapsulacion:** Oculta los detalles de implementacion, exponiendo solo las interfaces necesarias.
 
 
-----------------------------------------------------------------------------  
+------------------------------------------------------------------------------ 
 
