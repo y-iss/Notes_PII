@@ -2,182 +2,216 @@
 -- DDL: Eliminacion y creacion de tablas
 
 DROP TABLE IF EXISTS FAHormiga;
-DROP TABLE IF EXISTS FASexo;
-DROP TABLE IF EXISTS FAProvincia;
-DROP TABLE IF EXISTS FAAlimento;
-DROP TABLE IF EXISTS FARegion;
-DROP TABLE IF EXISTS FAPais;
+DROP TABLE IF EXISTS FAIngestaNativa;
+DROP TABLE IF EXISTS FAGenoAlimento;
+DROP TABLE IF EXISTS FATipoHormiga;
+DROP TABLE IF EXISTS FAAlimentoTipo;
+DROP TABLE IF EXISTS FALocalidad;
+DROP TABLE IF EXISTS FACatalogo;
+DROP TABLE IF EXISTS FACatalogoTipo;
 
-CREATE TABLE FAPais (
-    Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    Nombre VARCHAR(50) NOT NULL UNIQUE,
-
-    Estado VARCHAR(1) NOT NULL DEFAULT ('A'),
-    FechaCreacion DATETIME DEFAULT(datetime('now','localtime')),
-    FechaModifica DATETIME
+-- Se crean las tablas necesarias
+CREATE TABLE FACatalogoTipo(
+    IdCatalogoTipo INTEGER PRIMARY KEY AUTOINCREMENT,     
+    Nombre         VARCHAR(50) NOT NULL,
+    Estado         VARCHAR(1) DEFAULT('A') CHECK (Estado IN ('A','X')),
+    FechaCrea      DATETIME DEFAULT (DATETIME('now', 'localtime')),
+    FechaModifica  DATETIME 
 );
 
-CREATE TABLE FARegion (
-    Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT
-    ,Nombre VARCHAR(50) NOT NULL UNIQUE
-
-    ,Estado VARCHAR(1) NOT NULL DEFAULT ('A')
-    ,FechaCreacion DATETIME DEFAULT(datetime('now','localtime'))
-    ,FechaModifica DATETIME
+CREATE TABLE FACatalogo(
+    IdCatalogo     INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdCatalogoTipo INTEGER REFERENCES FACatalogoTipo(IdCatalogoTipo),
+    Nombre         VARCHAR(50) NOT NULL,
+    Estado         VARCHAR(1) DEFAULT('A') CHECK (Estado IN ('A','X')),
+    FechaCrea      DATETIME DEFAULT (DATETIME('now', 'localtime')),
+    FechaModifica  DATETIME 
 );
 
-CREATE TABLE FAProvincia (
-    Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT
-    ,Nombre VARCHAR(50) NOT NULL
-    ,RegionId INTEGER NOT NULL REFERENCES FARegion(Id)
-
-    ,Estado VARCHAR(1) NOT NULL DEFAULT ('A')
-    ,FechaCreacion DATETIME DEFAULT(datetime('now','localtime'))
-    ,FechaModifica DATETIME
+CREATE TABLE FALocalidad(
+    IdLocalidad       INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdLocalidadPadre  INTEGER REFERENCES FALocalidad(IdLocalidad), 
+    IdCatalogo        INTEGER REFERENCES FACatalogo(IdCatalogo),
+    Nombre            VARCHAR(50) NOT NULL,
+    Estado            VARCHAR(1) DEFAULT('A') CHECK (Estado IN ('A','X')),
+    FechaCrea         DATETIME DEFAULT (DATETIME('now', 'localtime')),
+    FechaModifica     DATETIME 
 );
 
-CREATE TABLE FAAlimento (
-    Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT
-    ,Tipo VARCHAR(50) NOT NULL
-    ,Categoria VARCHAR(50) NOT NULL
-
-    ,Estado VARCHAR(1) NOT NULL DEFAULT ('A')
-    ,FechaCreacion DATETIME DEFAULT(datetime('now','localtime'))
-    ,FechaModifica DATETIME
+CREATE TABLE FAIngestaNativa(
+    IdIngestaNativa   INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre            VARCHAR(50) NOT NULL,
+    Estado            VARCHAR(1) DEFAULT('A') CHECK (Estado IN ('A','X')),
+    FechaCrea         DATETIME DEFAULT (DATETIME('now', 'localtime')),
+    FechaModifica     DATETIME 
 );
 
-CREATE TABLE FASexo (
-    Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT
-    ,Nombre VARCHAR(50) NOT NULL UNIQUE
-
-    ,Estado VARCHAR(1) NOT NULL DEFAULT ('A')
-    ,FechaCreacion DATETIME DEFAULT(datetime('now','localtime'))
-    ,FechaModifica DATETIME
+CREATE TABLE FAGenoAlimento(
+    IdGenoAlimento    INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre            VARCHAR(50) NOT NULL,
+    Estado            VARCHAR(1) DEFAULT('A') CHECK (Estado IN ('A','X')),
+    FechaCrea         DATETIME DEFAULT (DATETIME('now', 'localtime')),
+    FechaModifica     DATETIME 
 );
 
-CREATE TABLE FAHormiga (
-    Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT
-    ,TipoHormiga VARCHAR(50) NOT NULL
-    ,SexoId INTEGER NOT NULL REFERENCES FASexo(Id)
-    ,ProvinciaId INTEGER NOT NULL REFERENCES FAProvincia(Id)
-    ,GenoAlimentoId INTEGER NOT NULL REFERENCES FAAlimento(Id)
-    ,IngestaNativaId INTEGER NOT NULL REFERENCES FAAlimento(Id)
-    ,Estado VARCHAR(50) NOT NULL
-
-    ,EstadoRegistro VARCHAR(1) NOT NULL DEFAULT ('A')
-    ,FechaCreacion DATETIME DEFAULT(datetime('now','localtime'))
-    ,FechaModifica DATETIME
+CREATE TABLE FATipoHormiga(
+    IdTipoHormiga     INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nombre            VARCHAR(50) NOT NULL,
+    Estado            VARCHAR(1) DEFAULT('A') CHECK (Estado IN ('A','X')),
+    FechaCrea         DATETIME DEFAULT (DATETIME('now', 'localtime')),
+    FechaModifica     DATETIME 
 );
 
--- DML: Insercion de datos iniciales
+CREATE TABLE FAHormiga(
+    IdHormiga         INTEGER PRIMARY KEY AUTOINCREMENT,
+    TipoHormiga       INTEGER REFERENCES FATipoHormiga(IdTipoHormiga),
+    Sexo              INTEGER REFERENCES FACatalogo(IdCatalogo),
+    Provincia         INTEGER REFERENCES FALocalidad(IdLocalidad),
+    GenoAlimento      INTEGER REFERENCES FAGenoAlimento(IdGenoAlimento),
+    IngestaNativa     INTEGER REFERENCES FAIngestaNativa(IdIngestaNativa),
+    Estado            VARCHAR(1) DEFAULT('A') CHECK (Estado IN ('A','X')),
+    FechaCrea         DATETIME DEFAULT (DATETIME('now', 'localtime')),
+    FechaModifica     DATETIME 
+);
 
-INSERT INTO FAPais (Nombre) VALUES ('Ecuador');
+-- Insertando datos iniciales
+INSERT INTO FACatalogoTipo(Nombre) VALUES
+-- Catalogos
+('Localidad'),          -- idCatalogoTipo1
+('Sexo');               -- idCatalogoTipo2 
 
-INSERT INTO FARegion (Nombre) VALUES 
-('Costa'),
-('Sierra'),
-('Oriente'),
-('Galapagos');
+INSERT INTO FACatalogo(IdCatalogoTipo, Nombre) VALUES
+-- Catalogos
+(1, 'Pais'),            
+(1, 'Region'),         
+(1, 'Provincia'),       
+(2, 'Macho'),           
+(2, 'Hembra'),          
+(2, 'Asexual');         
 
-INSERT INTO FAProvincia (Nombre, RegionId) VALUES 
-('Carchi', 2),
-('Guayas', 1),  
-('Manabi', 1),  
-('Esmeraldas', 1);
+INSERT INTO FALocalidad(IdLocalidadPadre, IdCatalogo, Nombre) VALUES
+(NULL, 1, 'Ecuador'),
+(1, 2, 'Sierra'),
+(1, 2, 'Oriente'),
+(1, 2, 'Costa'),
+(1, 2, 'Insular'),
+(2, 2, 'Carchi'),
+(2, 2, 'Imbabura'),
+(2, 2, 'Pichincha'),
+(2, 2, 'Cotopaxi'),
+(2, 2, 'Tunguragua'),
+(2, 2, 'Bolivar'),
+(2, 2, 'Chimborazo'),
+(2, 2, 'Cañar'),
+(2, 2, 'Azuay'),
+(2, 2, 'Loja'),
+(3, 2, 'Sucumbios'),
+(3, 2, 'Napo'),
+(3, 2, 'Orellana'),
+(3, 2, 'Pastaza'),
+(3, 2, 'Morona Santiago'),
+(3, 2, 'Zamora Chinchipe'),
+(4, 2, 'Esmeraldas'),
+(4, 2, 'Santo Domingo de los Tsachilas'),
+(4, 2, 'Manabi'),
+(4, 2, 'Los Rios'),
+(4, 2, 'Guayas'),
+(4, 2, 'Santa Elena'),
+(4, 2, 'El Oro'),
+(5, 2, 'Galapagos');
 
--- 2,2,'Imbabura'),
--- (2,2,'Pichincha'),
--- (2,2,'Cotopaxi'),
--- (2,2,'Tunguragua'),
--- (2,2,'Bolivar'),
--- (2,2,'Chimborazo'),
--- (2,2,'Cañar'),
--- (2,2,'Azuay'),
--- (2,2,'Loja'),
--- (3,2,'Sucumbios'),
--- (3,2,'Napo'),
--- (3,2,'Orellana'),
--- (3,2,'Pastaza'),
--- (3,2,'Morona Santiago'),
--- (3,2,'Zamora Chinchipe'),
--- (4,2,'Esmeraldas'),
--- (4,2,'Santo Domingo de los Tsachilas'),
--- (4,2,'Manabi'),
--- (4,2,'Los Rios'),
+INSERT INTO FAIngestaNativa(Nombre) VALUES
+('Carnivoro'),
+('Herbivoro'),
+('Omnivoro'),
+('Insectivoro');
 
-INSERT INTO FAAlimento (Tipo, Categoria) VALUES 
-('Carnivoro', 'IngestaNativa'),
-('Herbivoro', 'IngestaNativa'),
-('Omnivoro', 'IngestaNativa'),
-('Insectivoros', 'IngestaNativa');
+INSERT INTO FAGenoAlimento(Nombre) VALUES
+('X'),
+('XX'),
+('XY');
 
-INSERT INTO FAAlimento (Tipo, Categoria) VALUES 
-('X', 'GenoAlimento'),
-('XX', 'GenoAlimento'),
-('XY', 'GenoAlimento');
+INSERT INTO FATipoHormiga(Nombre) VALUES
+('Hormiga Larva'),
+('Hormiga Soldado'),
+('Hormiga Rastrera'),
+('Hormiga Reina'),
+('Hormiga Bala'),
+('Hormiga de Fuego'),
+('Hormiga Guerrera'),
+('Hormiga Cortadora de hojas'),
+('Hormiga Carpintera'),
+('Hormiga Faraona'),
+('Hormiga Casera olorosa'),
+('Hormiga del Pavimento');
 
-INSERT INTO FASexo (Nombre) VALUES 
-('Macho'),
-('Hembra'),
-('Asexual');
+INSERT INTO FAHormiga(TipoHormiga, Sexo, Provincia, GenoAlimento, IngestaNativa) VALUES
+(2, 4, 17, 1, 1);
 
-INSERT INTO FAHormiga (TipoHormiga, SexoId, ProvinciaId, GenoAlimentoId, IngestaNativaId, Estado) VALUES 
-('HormigaSoldado', 1, 1, 5, 1, 'Activa'),  
-('HormigaReina', 2, 2, 6, 2, 'Inactiva');  
-
--- SELECT: Consultar los datos insertados en cada tabla
-
-SELECT Id
-    ,Nombre
-    ,Estado
-    ,FechaCreacion
-    ,FechaModifica 
-FROM FAPais
+-- Select queries to verify the data
+SELECT 
+    IdCatalogoTipo AS Id,
+    Nombre,
+    Estado,
+    FechaCrea AS FechaCreacion,
+    FechaModifica 
+FROM FACatalogoTipo
 WHERE Estado = 'A';
 
-SELECT Id 
-    ,Nombre 
-    ,Estado
-    ,FechaCreacion 
-    ,FechaModifica 
-FROM FARegion
+SELECT 
+    IdCatalogo AS Id,
+    Nombre,
+    Estado,
+    FechaCrea AS FechaCreacion,
+    FechaModifica 
+FROM FACatalogo
 WHERE Estado = 'A';
 
-SELECT Id
-    ,Nombre
-    ,RegionId
-    ,Estado
-    ,FechaCreacion
-    ,FechaModifica 
-FROM FAProvincia
+SELECT 
+    IdLocalidad AS Id,
+    Nombre,
+    Estado,
+    FechaCrea AS FechaCreacion,
+    FechaModifica 
+FROM FALocalidad
 WHERE Estado = 'A';
 
-SELECT Id
-    ,Tipo
-    ,Categoria
-    ,Estado
-    ,FechaCreacion
-    ,FechaModifica 
-FROM FAAlimento
+SELECT 
+    IdIngestaNativa AS Id,
+    Nombre,
+    Estado,
+    FechaCrea AS FechaCreacion,
+    FechaModifica 
+FROM FAIngestaNativa
 WHERE Estado = 'A';
 
-SELECT Id 
-    ,Nombre
-    ,Estado
-    ,FechaCreacion
-    ,FechaModifica 
-FROM FASexo
+SELECT 
+    IdGenoAlimento AS Id,
+    Nombre,
+    Estado,
+    FechaCrea AS FechaCreacion,
+    FechaModifica 
+FROM FAGenoAlimento
 WHERE Estado = 'A';
 
-SELECT Id 
-    ,TipoHormiga
-    ,SexoId
-    ,ProvinciaId
-    ,GenoAlimentoId
-    ,IngestaNativaId
-    ,Estado 
-    ,EstadoRegistro
-    ,FechaCreacion 
-    ,FechaModifica 
+SELECT 
+    IdTipoHormiga AS Id,
+    Nombre,
+    Estado,
+    FechaCrea AS FechaCreacion,
+    FechaModifica 
+FROM FATipoHormiga
+WHERE Estado = 'A';
+
+SELECT 
+    IdHormiga AS Id,
+    TipoHormiga,
+    Sexo,
+    Provincia,
+    GenoAlimento,
+    IngestaNativa,
+    Estado,
+    FechaCrea AS FechaCreacion,
+    FechaModifica 
 FROM FAHormiga
-WHERE EstadoRegistro = 'A';
+WHERE Estado = 'A';
