@@ -80,9 +80,30 @@ INSERT INTO FARegion (Nombre) VALUES
 ('Galapagos');
 
 INSERT INTO FAProvincia (Nombre, RegionId) VALUES 
+('Carchi', 2),
 ('Guayas', 1),  
 ('Manabi', 1),  
 ('Esmeraldas', 1);
+
+-- 2,2,'Imbabura'),
+-- (2,2,'Pichincha'),
+-- (2,2,'Cotopaxi'),
+-- (2,2,'Tunguragua'),
+-- (2,2,'Bolivar'),
+-- (2,2,'Chimborazo'),
+-- (2,2,'Cañar'),
+-- (2,2,'Azuay'),
+-- (2,2,'Loja'),
+-- (3,2,'Sucumbios'),
+-- (3,2,'Napo'),
+-- (3,2,'Orellana'),
+-- (3,2,'Pastaza'),
+-- (3,2,'Morona Santiago'),
+-- (3,2,'Zamora Chinchipe'),
+-- (4,2,'Esmeraldas'),
+-- (4,2,'Santo Domingo de los Tsachilas'),
+-- (4,2,'Manabi'),
+-- (4,2,'Los Rios'),
 
 INSERT INTO FAAlimento (Tipo, Categoria) VALUES 
 ('Carnivoro', 'IngestaNativa'),
