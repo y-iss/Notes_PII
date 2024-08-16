@@ -1,4 +1,4 @@
--- database: :memory:
+-- database: ../Database/FAEcuaFauna.sqlite
 -- DDL: Eliminacion y creacion de tablas
 
 DROP TABLE IF EXISTS FAHormiga;
