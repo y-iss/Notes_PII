@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram id="l1MeeHBW9337Af07n4HF" name="Página-1">
+        <mxGraphModel dx="474" dy="563" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FAHormigaLarva&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- idHormigaLarva: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nombre: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- edad: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- estadoEvolutivo: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- fechaCreacion: date&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FAHormigaLarva()&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ evolucionar(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getIdHormigaLarva(): int&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ setIdHormigaLarva(id: int): void&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getNombre(): string&lt;br&gt;+ setNombre(nombre: string): void&lt;br&gt;+ getEdad(): int&lt;br&gt;+ setEdad(edad: int): void&lt;br&gt;+ getEstadoEvolutivo(): string&lt;br&gt;+ setEstadoEvolutivo(estado: string): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getFechaCreacion(): Date&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setFechaCreacion(fecha: Date): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=none;fontColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="81" y="103" width="231" height="299" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FAGenoAlimento&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- idGenoAlimento: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nombre : string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tipo : string&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FAGenoAlimento()&amp;nbsp;&lt;br&gt;+ getIdGenoAlimento(): int&amp;nbsp;&lt;br&gt;+ setIdGenoAlimento(id: int): void&amp;nbsp;&lt;br&gt;+ getNombre(): String&amp;nbsp;&lt;br&gt;+ setNombre(nombre: String): void&amp;nbsp;&lt;br&gt;+ getTipo(): String&amp;nbsp;&lt;br&gt;+ setTipo(tipo: String): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=none;fontColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="126" y="628" width="215" height="199" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FAIngestaNativa&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- idIngestaNativa: int&amp;nbsp;&lt;br&gt;- nombre: String&amp;nbsp;&lt;br&gt;- descripcion: String&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FAIngestaNativa()&amp;nbsp;&lt;br&gt;+ getIdIngestaNativa(): int&amp;nbsp;&lt;br&gt;+ setIdIngestaNativa(id: int): void&amp;nbsp;&lt;br&gt;+ getNombre(): String&amp;nbsp;&lt;br&gt;+ setNombre(nombre: String): void&amp;nbsp;&lt;br&gt;+ getDescripcion(): String&amp;nbsp;&lt;br&gt;+ setDescripcion(descripcion: String): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=none;fontColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="475" y="634" width="246" height="245" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FAAlimentacionHormiga&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- idAlimentacionHormiga: int&amp;nbsp;&lt;br&gt;- hormigaLarva: FAHormigaLarva&amp;nbsp;&lt;br&gt;- genoAlimento: FAGenoAlimento&amp;nbsp;&lt;br&gt;- ingestaNativa: FAIngestaNativa&amp;nbsp;&lt;br&gt;- fechaAlimentacion: Date&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FAAlimentacionHormiga()&amp;nbsp;&lt;br&gt;+ getIdAlimentacionHormiga(): int&amp;nbsp;&lt;br&gt;+ setIdAlimentacionHormiga(id: int): void&amp;nbsp;&lt;br&gt;+ getHormigaLarva(): FAHormigaLarva&amp;nbsp;&lt;br&gt;+ setHormigaLarva(hormiga: FAHormigaLarva): void&amp;nbsp;&lt;br&gt;+ getGenoAlimento(): FAGenoAlimento&amp;nbsp;&lt;br&gt;+ setGenoAlimento(geno: FAGenoAlimento): void&amp;nbsp;&lt;br&gt;+ getIngestaNativa(): FAIngestaNativa&amp;nbsp;&lt;br&gt;+ setIngestaNativa(ingesta: FAIngestaNativa): void&amp;nbsp;&lt;br&gt;+ getFechaAlimentacion(): Date&amp;nbsp;&lt;br&gt;+ setFechaAlimentacion(fecha: Date): void&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=none;fontColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="508" y="113" width="296" height="289" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="endArrow=classic;html=1;fontColor=#000000;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="560" y="310" as="sourcePoint"/>
+                        <mxPoint x="610" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;fontColor=#000000;exitX=1.01;exitY=0.414;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#000000;" parent="1" source="12" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="442" y="680" as="sourcePoint"/>
+                        <mxPoint x="465" y="718" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;fontColor=#000000;exitX=0.572;exitY=-0.035;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#000000;entryX=0.124;entryY=1.032;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="12" target="16" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="249.0000000000001" y="599.996" as="sourcePoint"/>
+                        <mxPoint x="370.85" y="607.61" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;fontColor=#000000;strokeColor=#000000;" parent="1" target="11" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="494" y="253" as="sourcePoint"/>
+                        <mxPoint x="554.704" y="421.24800000000005" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="&lt;font color=&quot;#000000&quot;&gt;BaseDatos&lt;/font&gt;" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;strokeColor=#000000;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="603" y="1005" width="150" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
